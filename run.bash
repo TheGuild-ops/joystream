@@ -5,6 +5,7 @@ wget https://github.com/Joystream/joystream/releases/download/v7.5.0/joystream-n
 tar -vxf joystream-node-3.3.0-fdb75f5ec-x86_64-linux-gnu.tar.gz
 wget https://github.com/Joystream/joystream/releases/download/v7.5.0/joy-testnet-4.json
 
+systemctl stop joy
 cat <<EOF > /etc/systemd/system/joy.service
 
 [Unit]
