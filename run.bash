@@ -1,5 +1,5 @@
 cat /etc/systemd/system/joy.service
-
+apt-get install ufw
 echo "PLS enter validator Name"
 read name
 rm joy-testnet-4.json*
@@ -9,6 +9,7 @@ wget https://github.com/Joystream/joystream/releases/download/v7.5.0/joy-testnet
 ufw allow 300000
 ufw allow 1200
 ufw allow 1201
+ufw allow 22
 systemctl stop joy
 cat <<EOF > /etc/systemd/system/joy.service
 
