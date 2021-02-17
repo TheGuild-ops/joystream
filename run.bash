@@ -1,4 +1,5 @@
 cat /etc/systemd/system/joy.service
+
 echo "PLS enter validator Name"
 read name
 rm joy-testnet-4.json*
