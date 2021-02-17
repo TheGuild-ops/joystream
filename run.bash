@@ -19,7 +19,6 @@ ExecStart=/root/joystream-node \
         --chain joy-testnet-4.json \
         --pruning archive \
         --validator \
-        --wasm-execution Compiled \
         --name $name
 Restart=on-failure
 RestartSec=3
